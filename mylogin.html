@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        *,
+         ::before,
+         ::after {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            box-sizing: border-box;
+        }
+        
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font: 14px Arial;
+            width: 30vw;
+            color: #f1f1f1;
+            background: url(oracle_bg.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        .wrapper {
+            box-sizing: border-box;
+            width: 370px;
+            height: 0;
+            box-shadow: 0 5px 2px rgba(0, 0, 0, 0.6);
+            margin: 100px auto;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .myForm {
+            width: 100%;
+            padding: 15px 20px;
+        }
+        
+        .form-group {
+            padding: 15px 0;
+        }
+        
+        .last {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        input[type="password"] {
+            width: 280px;
+            height: 35px;
+            margin: 0 auto;
+        }
+        
+        input[type="text"] {
+            width: 280px;
+            height: 35px;
+            margin: 0 auto;
+        }
+        
+        input[type="submit"]:valid,
+        input[type="submit"]:active {
+            outline: none;
+            border: none;
+        }
+        
+        #entete {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .overlay {
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 20px;
+        }
+        
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        
+        p {
+            display: inline-block;
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            body {
+                margin: 0 auto;
+                width: 100%;
+            }
+            .wrapper {
+                margin: 50px auto 0;
+                width: 300px;
+                min-width: 300px;
+            }
+            input[type="password"] {
+                width: 250px;
+                height: 35px;
+                margin: 0 auto;
+            }
+            input[type="text"] {
+                width: 250px;
+                height: 35px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="overlay">
+            <h2 id="entete">Se Connecter</h2>
+            <form action="#" method="post">
+                <div class="form-group ">
+                    <!-- <label>Username</label> -->
+                    <input type="text" name="username" class="form-control" value="" placeholder="Nom d'Utilisateur">
+                </div>
+                <div class="form-group ">
+                    <!-- <label>Password</label> -->
+                    <input type="password" name="password" class="form-control" placeholder="Mot de passe">
+                </div>
+                <div class="form-group button">
+                    <input type="submit" class="btn btn-primary" value="Se Connecter">
+                </div>
+                <p>Vous n'avez pas de compte? <a href="register.html">S'inscrire</a>.</p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
